@@ -1,7 +1,7 @@
 #pragma once
 #include "meta_nn/data/facilities/tags.h"
 #include "meta_nn/data/facilities/traits.h"
-#include "meta_nn/evaluate/facilities/eval_handle.h"
+//#include "meta_nn/evaluate/facilities/eval_handle.h"
 
 template <typename Elem, typename Device = DeviceTags::CPU>
 class Scalar

@@ -1,4 +1,5 @@
 #pragma once
+#include "meta_nn/data/batch/batch.h"
 #include "meta_nn/data/facilities/continuous_memory.h"
 #include "meta_nn/data/facilities/lower_access.h"
 #include "meta_nn/data/matrices/matrices.h"
@@ -19,9 +20,7 @@ public:
     using DeviceType = DeviceTags::CPU;
 
     friend struct LowerAccessImpl<Matrix<Elem, DeviceTags::CPU>>;
-
-    // TODO Batch
-    // friend class Batch<TElem, DeviceTags::CPU, CategoryTags::Matrix>;
+    friend class Batch<TElem, DeviceTags::CPU, CategoryTags::Matrix>;
 
 public:
     Matrix(size_t row_num = 0, size_t col_num = 0)
