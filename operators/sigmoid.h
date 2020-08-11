@@ -18,7 +18,8 @@ public:
     }
 };
 
-template <typename T, std::enable_if_t<OperSigmoid_<T>::vaild>* = nullptr>
+template <typename T,
+          std::enable_if_t<OperSigmoid_<T>::vaild>* = nullptr>
 auto Sigmoid(T&& para)
 {
     return OperSigmoid_<T>::Eval(std::forward<T>(para));

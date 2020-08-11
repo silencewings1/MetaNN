@@ -11,3 +11,10 @@ constexpr static bool AndValue = false;
 
 template <typename Next>
 constexpr static bool AndValue<true, Next> = Next::value;
+
+// Or
+template <bool cur, typename Next>
+constexpr static bool OrValue = true;
+
+template <typename Next>
+constexpr static bool OrValue<false, Next> = Next::value;

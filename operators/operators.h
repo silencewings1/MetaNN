@@ -6,6 +6,7 @@
 #include "meta_nn/operators/facilities/oper_seq.h"
 #include "meta_nn/operators/facilities/organizer.h"
 #include "meta_nn/operators/facilities/traits.h"
+#include "meta_nn/operators/facilities/tags.h"
 
 /////////////////////////// UnaryOp //////////////////////////
 template <typename OpTag, typename Data>
